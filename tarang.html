@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARANG '26 - Event Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            text-align: center;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .radio {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TARANG '26</h1>
+        <h3>Event Registration Form</h3>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" required>
+
+            <label>College Name</label>
+            <input type="text" placeholder="Enter your college name" required>
+
+            <label>Department</label>
+            <input type="text" placeholder="Enter your department" required>
+
+            <label>Year of Study</label>
+            <select required>
+                <option value="">Select Year</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>Final Year</option>
+            </select>
+
+            <label>Gender</label>
+            <input class="radio" type="radio" name="gender" value="Male"> Male
+            <input class="radio" type="radio" name="gender" value="Female"> Female
+            <input class="radio" type="radio" name="gender" value="Other"> Other
+
+            <label>Select Event</label>
+            <select required>
+                <option value="">Choose an Event</option>
+                <option>Dance</option>
+                <option>Music</option>
+                <option>Quiz</option>
+                <option>Photography</option>
+                <option>Debugging</option>
+                <option>Paper Presentation</option>
+            </select>
+
+            <label>Address</label>
+            <textarea rows="3" placeholder="Enter your address"></textarea>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
